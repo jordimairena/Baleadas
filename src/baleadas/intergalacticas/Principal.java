@@ -1288,6 +1288,11 @@ public class Principal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        
+        System.out.println("hola");
+        PilaCocinero p = new PilaCocinero();
+        p.push(new Cocineros("Jordi"));
+        p.imprimir();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Principal().setVisible(true);
