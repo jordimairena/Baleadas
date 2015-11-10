@@ -23,8 +23,10 @@ public class PilaCocinero {
             NodoCocinero n = new NodoCocinero(c);
             n.setSiguiente(head);
             this.head = n;
+            
         }
         tamaño++;
+        System.out.println("Agregado un cocinero, pila de tamano: "+tamaño);
     }
     
     public NodoCocinero pop(int pos){
@@ -48,6 +50,7 @@ public class PilaCocinero {
     
     public void imprimir(){
         NodoCocinero temp = head;
+        System.out.println("Head: "+head.getCocinero().getNombre());
         while(temp.siguiente != null){
             System.out.println(temp.getCocinero().getNombre());
             temp = temp.siguiente;
