@@ -58,11 +58,65 @@ public class Principal extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel17 = new javax.swing.JLabel();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        lbCocinero1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jProgressBar2 = new javax.swing.JProgressBar();
+        jTextField3 = new javax.swing.JTextField();
+        jProgressBar3 = new javax.swing.JProgressBar();
+        jTextField4 = new javax.swing.JTextField();
+        jProgressBar4 = new javax.swing.JProgressBar();
+        jTextField5 = new javax.swing.JTextField();
+        jProgressBar5 = new javax.swing.JProgressBar();
+        jProgressBar6 = new javax.swing.JProgressBar();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jProgressBar7 = new javax.swing.JProgressBar();
+        jTextField8 = new javax.swing.JTextField();
+        jProgressBar8 = new javax.swing.JProgressBar();
+        jTextField9 = new javax.swing.JTextField();
+        jProgressBar9 = new javax.swing.JProgressBar();
+        jProgressBar10 = new javax.swing.JProgressBar();
+        jProgressBar11 = new javax.swing.JProgressBar();
+        jTextField10 = new javax.swing.JTextField();
+        jProgressBar12 = new javax.swing.JProgressBar();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jProgressBar13 = new javax.swing.JProgressBar();
+        jProgressBar14 = new javax.swing.JProgressBar();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jProgressBar15 = new javax.swing.JProgressBar();
+        jTextField16 = new javax.swing.JTextField();
+        jProgressBar16 = new javax.swing.JProgressBar();
+        jProgressBar17 = new javax.swing.JProgressBar();
+        jTextField17 = new javax.swing.JTextField();
+        jProgressBar18 = new javax.swing.JProgressBar();
+        jTextField18 = new javax.swing.JTextField();
+        jProgressBar19 = new javax.swing.JProgressBar();
+        jTextField19 = new javax.swing.JTextField();
+        jProgressBar20 = new javax.swing.JProgressBar();
+        jTextField20 = new javax.swing.JTextField();
+        lbCocinero2 = new javax.swing.JLabel();
+        lbCocinero3 = new javax.swing.JLabel();
+        lbCocinero4 = new javax.swing.JLabel();
+        lbCocinero5 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
         agregar_platos = new javax.swing.JDialog();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -357,27 +411,47 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel8.setText("Tiempo");
 
-        jLabel9.setText("Orden");
+        jLabel9.setText("# Orden");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setEnabled(false);
-        jScrollPane1.setViewportView(jTextArea1);
+        lbCocinero1.setText("Inactivo");
 
-        jLabel17.setText("jLabel17");
+        lbCocinero2.setText("Inactivo");
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane10.setViewportView(jTable3);
+        lbCocinero3.setText("Inactivo");
+
+        lbCocinero4.setText("Inactivo");
+
+        lbCocinero5.setText("Inactivo");
+
+        jLabel63.setText("Inactivo");
+
+        jLabel64.setText("Inactivo");
+
+        jLabel65.setText("Inactivo");
+
+        jLabel66.setText("Inactivo");
+
+        jLabel67.setText("Inactivo");
+
+        jLabel68.setText("Inactivo");
+
+        jLabel69.setText("Inactivo");
+
+        jLabel70.setText("Inactivo");
+
+        jLabel71.setText("Inactivo");
+
+        jLabel72.setText("Inactivo");
+
+        jLabel73.setText("Inactivo");
+
+        jLabel74.setText("Inactivo");
+
+        jLabel75.setText("Inactivo");
+
+        jLabel76.setText("Inactivo");
+
+        jLabel77.setText("Inactivo");
 
         javax.swing.GroupLayout cocinerosLayout = new javax.swing.GroupLayout(cocineros.getContentPane());
         cocineros.getContentPane().setLayout(cocinerosLayout);
@@ -386,59 +460,286 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(cocinerosLayout.createSequentialGroup()
                 .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(cocinerosLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))
-                    .addGroup(cocinerosLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(10, 10, 10)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addGap(71, 71, 71)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(cocinerosLayout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addGap(52, 52, 52)
                                 .addComponent(jLabel8)
-                                .addGap(94, 94, 94))
+                                .addGap(94, 94, 94)
+                                .addComponent(jLabel9))
                             .addGroup(cocinerosLayout.createSequentialGroup()
-                                .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lbCocinero1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)))
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(cocinerosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lbCocinero2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(cocinerosLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)))
+                            .addComponent(lbCocinero3, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbCocinero4, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbCocinero5, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addComponent(jProgressBar18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(58, 58, 58)
                 .addComponent(jLabel6)
-                .addContainerGap())
-            .addGroup(cocinerosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(10, 10, 10))
         );
         cocinerosLayout.setVerticalGroup(
             cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cocinerosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
+                .addGap(11, 11, 11)
+                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(cocinerosLayout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addGroup(cocinerosLayout.createSequentialGroup()
+                                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(cocinerosLayout.createSequentialGroup()
+                                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(13, 13, 13)
+                                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel7)
+                                                    .addComponent(jLabel8)
+                                                    .addComponent(jLabel9))
+                                                .addGap(12, 12, 12)
+                                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lbCocinero1)
+                                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(lbCocinero2))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cocinerosLayout.createSequentialGroup()
+                                        .addComponent(lbCocinero3)
+                                        .addGap(38, 38, 38))
+                                    .addComponent(lbCocinero4, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(18, 18, 18)
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jProgressBar12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jProgressBar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(cocinerosLayout.createSequentialGroup()
+                                    .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(cocinerosLayout.createSequentialGroup()
+                                            .addComponent(lbCocinero5)
+                                            .addGap(38, 38, 38))
+                                        .addComponent(jLabel64))
+                                    .addGap(76, 76, 76))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cocinerosLayout.createSequentialGroup()
+                                    .addComponent(jLabel65)
+                                    .addGap(38, 38, 38))
+                                .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(cocinerosLayout.createSequentialGroup()
                         .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(cocinerosLayout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(cocinerosLayout.createSequentialGroup()
-                                        .addGap(32, 32, 32)
-                                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(cocinerosLayout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(jLabel17)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel67)
+                                        .addGap(38, 38, 38))
+                                    .addComponent(jLabel72))
+                                .addGap(76, 76, 76))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cocinerosLayout.createSequentialGroup()
+                                .addComponent(jLabel73)
+                                .addGap(38, 38, 38))
+                            .addComponent(jLabel70, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(152, 152, 152))
+                    .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(cocinerosLayout.createSequentialGroup()
+                            .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(cocinerosLayout.createSequentialGroup()
+                                    .addComponent(jLabel69)
+                                    .addGap(38, 38, 38))
+                                .addComponent(jLabel68))
+                            .addGap(76, 76, 76))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cocinerosLayout.createSequentialGroup()
+                            .addComponent(jLabel66)
+                            .addGap(38, 38, 38))
+                        .addComponent(jLabel71, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addGap(18, 18, 18)
+                .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(cocinerosLayout.createSequentialGroup()
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jProgressBar18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(cocinerosLayout.createSequentialGroup()
+                            .addGroup(cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(cocinerosLayout.createSequentialGroup()
+                                    .addComponent(jLabel74)
+                                    .addGap(38, 38, 38))
+                                .addComponent(jLabel75))
+                            .addGap(76, 76, 76))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cocinerosLayout.createSequentialGroup()
+                            .addComponent(jLabel77)
+                            .addGap(38, 38, 38))
+                        .addComponent(jLabel76, javax.swing.GroupLayout.Alignment.TRAILING)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1394,7 +1695,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -1441,12 +1741,44 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JProgressBar jProgressBar10;
+    private javax.swing.JProgressBar jProgressBar11;
+    private javax.swing.JProgressBar jProgressBar12;
+    private javax.swing.JProgressBar jProgressBar13;
+    private javax.swing.JProgressBar jProgressBar14;
+    private javax.swing.JProgressBar jProgressBar15;
+    private javax.swing.JProgressBar jProgressBar16;
+    private javax.swing.JProgressBar jProgressBar17;
+    private javax.swing.JProgressBar jProgressBar18;
+    private javax.swing.JProgressBar jProgressBar19;
+    private javax.swing.JProgressBar jProgressBar2;
+    private javax.swing.JProgressBar jProgressBar20;
+    private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JProgressBar jProgressBar4;
+    private javax.swing.JProgressBar jProgressBar5;
+    private javax.swing.JProgressBar jProgressBar6;
+    private javax.swing.JProgressBar jProgressBar7;
+    private javax.swing.JProgressBar jProgressBar8;
+    private javax.swing.JProgressBar jProgressBar9;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1457,11 +1789,34 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JTable jt_lista_platos;
     private javax.swing.JTable jt_modif_lista_platos;
     private javax.swing.JTable jt_platos;
+    private javax.swing.JLabel lbCocinero1;
+    private javax.swing.JLabel lbCocinero2;
+    private javax.swing.JLabel lbCocinero3;
+    private javax.swing.JLabel lbCocinero4;
+    private javax.swing.JLabel lbCocinero5;
     private javax.swing.JDialog menu_ordenes;
     private javax.swing.JDialog menu_platos;
     private javax.swing.JTextField modif_nom_cliente;
