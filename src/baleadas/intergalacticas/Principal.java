@@ -5,6 +5,8 @@
  */
 package baleadas.intergalacticas;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author jordi
@@ -457,7 +459,7 @@ public class Principal extends javax.swing.JFrame {
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Boolean.class, java.lang.String.class
+                java.lang.Boolean.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
                 true, false
@@ -1166,6 +1168,15 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
         // TODO add your handling code here:
+        //Agregar ingredientes al jt
+        int tama = pi.getTama();
+        DefaultTableModel modelo = (DefaultTableModel)jt_platos.getModel();
+        
+        for (int i = 0; i < tama; i++) {
+            Ingredientes in = pi.peek(i).getIngrediente();
+            modelo.addRow(new Object[]{false,in});
+        }
+        jt_platos.setModel(modelo);
         agregar_platos.setModal(true);
         agregar_platos.pack();
         agregar_platos.setVisible(true);
@@ -1225,10 +1236,14 @@ public class Principal extends javax.swing.JFrame {
         PilaIngredientes p=new PilaIngredientes();
         String nom_ingrediente=this.txt_nom_ingredientes.getText();
         String desc_ingrediente=this.txta_descripcion_ingredientes.getText();
+
+        pi.push(new Ingredientes(nom_ingrediente, desc_ingrediente));
+
         p.push(new Ingredientes(nom_ingrediente,desc_ingrediente));
         p.imprimir();
         
         
+
     }//GEN-LAST:event_jButton9MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
@@ -1429,4 +1444,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextArea txta_descripcion_ingredientes;
     private javax.swing.JTextArea txta_modif_descr_plato;
     // End of variables declaration//GEN-END:variables
+    PilaIngredientes pi = new PilaIngredientes();
+    PilaCocinero pc = new PilaCocinero();
 }
