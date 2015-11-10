@@ -13,4 +13,23 @@ import javax.swing.JLabel;
  */
 public class HiloTiempo extends Thread {
     protected JLabel tiempo;
+
+    public HiloTiempo() {
+    }
+
+    public HiloTiempo(JLabel tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    public JLabel getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(JLabel tiempo) {
+        this.tiempo = tiempo;
+    }
+    
+    
+    
+    
 }
