@@ -1236,14 +1236,14 @@ public class Principal extends javax.swing.JFrame {
         PilaIngredientes p=new PilaIngredientes();
         String nom_ingrediente=this.txt_nom_ingredientes.getText();
         String desc_ingrediente=this.txta_descripcion_ingredientes.getText();
-<<<<<<< HEAD
+
         pi.push(new Ingredientes(nom_ingrediente, desc_ingrediente));
-=======
+
         p.push(new Ingredientes(nom_ingrediente,desc_ingrediente));
         p.imprimir();
         
         
->>>>>>> 71221a1d2f0938953bbd618433c8dffabebbce69
+
     }//GEN-LAST:event_jButton9MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
