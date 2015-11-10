@@ -33,27 +33,41 @@ public class Lista {
     public void insert(Plato plato) {
         NodoPlato newNodo = new NodoPlato(plato);
         NodoPlato temp = head;
-        
+
         if (tamano == 0) {
             this.setHead(newNodo);
         } else {
             while (temp.getNext() != null) {
-                temp = temp.getNext();                      
-            }            
+                temp = temp.getNext();
+            }
             temp.setNext(newNodo);
-            tamano+=1;
+            tamano += 1;
         }
     }
 
     public void delete(int tamano) {
         NodoPlato temp = head;
-        int cont = 0;
-        while (temp.getNext() != null) {
-            NodoPlato temp2 = temp.getNext();
-            if (cont == tamano - 1) {
-                temp.setNext(temp2.getNext());
+        NodoPlato temp2 = temp.getNext();//siguiente
+        NodoPlato temp3 = temp2.getNext();
+        int cont=0;
+        if (tamano == 0) {
+            this.setHead(temp2);
+        } else {        
+            while (temp.getNext() != head) {
+                 //System.out.println("W");    
+                if (cont == tamano) {
+                    //System.out.println("CONT==POS-1");                    
+                    temp.setNext(temp2.getNext());                    
+                    break;
+                }else if(cont==tamano-1){
+                    //System.out.println("E");
+                    temp.setNext(temp2.getNext().getNext());
+                }else{
+                    temp.setNext(temp2);
+                }
+                cont++;
+
             }
-            cont++;
         }
     }
 
