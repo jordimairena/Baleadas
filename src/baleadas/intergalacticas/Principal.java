@@ -1137,7 +1137,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         String modif_nom_plato=this.txt_modif_nom_plato.getText();
         String modif_precio_plato=this.txt_modif_precio_plato.getText();
-        String modif_tiempo_plato=this.txt_modif_tiempo_plato.getText();
+        double modif_tiempo_plato=Double.parseDouble(this.txt_modif_tiempo_plato.getText());
         String modif_descr_plato=this.txta_modif_descr_plato.getText();
         
     }//GEN-LAST:event_jButton6MouseClicked
@@ -1147,7 +1147,7 @@ public class Principal extends javax.swing.JFrame {
         int num_orden=Integer.parseInt(this.num_orden_orden.getText());
         String nom_cliente= this.nom_cliente_orden.getName();
         String total_a_pagar=this.total_pagar_orden.getText();
-        int tiempo_prep=Integer.parseInt(tiempo_prep_orden.getText());
+        double tiempo_prep=Double.parseDouble(tiempo_prep_orden.getText());
     }//GEN-LAST:event_jButton16MouseClicked
 
     private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
@@ -1155,7 +1155,7 @@ public class Principal extends javax.swing.JFrame {
         int modif_num_orden=Integer.parseInt(this.modif_num_orden.getText());
         String modif_nom_cliente= this.modif_nom_cliente.getName();
         String modif_total_a_pagar=this.modif_total_pagar_orden.getText();
-        int modif_tiempo_prep=Integer.parseInt(modif_tiempo_orden.getText());
+        double modif_tiempo_prep=Double.parseDouble(modif_tiempo_orden.getText());
     }//GEN-LAST:event_jButton17MouseClicked
 
     /**
