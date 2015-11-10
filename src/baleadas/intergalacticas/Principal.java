@@ -1171,7 +1171,9 @@ public class Principal extends javax.swing.JFrame {
         //Agregar ingredientes al jt
         int tama = pi.getTama();
         DefaultTableModel modelo = (DefaultTableModel)jt_platos.getModel();
-        
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
         for (int i = 0; i < tama; i++) {
             Ingredientes in = pi.peek(i).getIngrediente();
             modelo.addRow(new Object[]{false,in});
@@ -1184,6 +1186,16 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
         // TODO add your handling code here:
+        //Agregar el menu
+        DefaultTableModel modelo = (DefaultTableModel)jt_lista_platos.getModel();
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
+        
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            Plato pla = menu.peek(i).getPlato();
+            modelo.addRow(new Object[]{false, pla});
+        }
         agregar_ordenes.setModal(true);
         agregar_ordenes.pack();
         agregar_ordenes.setVisible(true);
@@ -1249,10 +1261,16 @@ public class Principal extends javax.swing.JFrame {
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         // TODO add your handling code here:
         String nom_plato=this.txt_nom_plato.getText();
-        String precio_plato=this.txt_precio_plato.getText();
+        double precio_plato=Double.parseDouble(this.txt_precio_plato.getText());
         double tiempo_plato=Double.parseDouble(this.txt_precio_plato.getText());
         String desc_plato=this.txta_descr_plato.getText();
         
+        DefaultTableModel modelo = (DefaultTableModel)jt_platos.getModel();
+        Object ing[] = null;
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            ing[ing.length+1] = (Ingredientes)jt_platos.getValueAt(i, 1);
+        }
+        menu.insert(new Plato(nom_plato, desc_plato, precio_plato, tiempo_plato, ing));
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
@@ -1446,4 +1464,5 @@ public class Principal extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     PilaIngredientes pi = new PilaIngredientes();
     PilaCocinero pc = new PilaCocinero();
+    Lista menu = new Lista();
 }

@@ -14,8 +14,8 @@ public class Lista {
     NodoPlato head;
     protected int tamano;
 
-    public Lista(NodoPlato head) {
-        this.head = head;
+    public Lista() {
+        this.head = null;
     }
 
     public void setHead(NodoPlato head) {
@@ -77,5 +77,19 @@ public class Lista {
             System.out.println(temp.getPlato());
             temp = temp.next;
         }
+    }
+    
+    public NodoPlato peek(int pos){
+        int tempNum = 0;
+        NodoPlato temp = head;
+        while(temp.getNext() != null){
+            tempNum++;
+            if (pos == tempNum) {
+                break;
+            }else{
+                temp = temp.getNext();
+            }
+        }
+        return temp;
     }
 }

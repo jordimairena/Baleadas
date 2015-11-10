@@ -10,15 +10,26 @@ package baleadas.intergalacticas;
  * @author jordi
  */
 public class Plato {
-    protected String nombre;
-    protected String descripcion;
-    protected double precio;
-    //lista de ingredientes
-    protected double tiempo;
+    public String nombre;
+    public String descripcion;
+    public double precio;
+    Object ingredientes[];
+    public double tiempo;
 
     public Plato() {
+        
     }
 
+    public Plato(String nombre, String descripcion, double precio, double tiempo, Object ingredientes[]) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precio = precio;
+        this.tiempo = tiempo;
+        this.ingredientes = ingredientes;
+    }
+
+    
+    
     public String getNombre() {
         return nombre;
     }
