@@ -45,30 +45,24 @@ public class Lista {
         }
     }
 
-    public void delete(int tamano) {
+    public void delete(int pos) {
         NodoPlato temp = head;
-        NodoPlato temp2 = temp.getNext();//siguiente
-        NodoPlato temp3 = temp2.getNext();
-        int cont=0;
-        if (tamano == 0) {
-            this.setHead(temp2);
-        } else {        
-            while (temp.getNext() != head) {
-                 //System.out.println("W");    
-                if (cont == tamano) {
-                    //System.out.println("CONT==POS-1");                    
-                    temp.setNext(temp2.getNext());                    
-                    break;
-                }else if(cont==tamano-1){
-                    //System.out.println("E");
-                    temp.setNext(temp2.getNext().getNext());
-                }else{
-                    temp.setNext(temp2);
-                }
-                cont++;
-
+        NodoPlato temp2 = null;
+        int cont = 0;
+        while (temp.getNext() != null) {
+            if (cont == pos - 1) {
+                temp2 = temp;
             }
+
+            if (cont == pos) {
+                temp = temp.getNext();
+                break;
+            }
+            temp = temp.getNext();
+            cont++;
         }
+
+        temp2.setNext(temp);
     }
 
     public void Print_Lista() {
@@ -78,15 +72,15 @@ public class Lista {
             temp = temp.next;
         }
     }
-    
-    public NodoPlato peek(int pos){
+
+    public NodoPlato peek(int pos) {
         int tempNum = 0;
         NodoPlato temp = head;
-        while(temp.getNext() != null){
+        while (temp.getNext() != null) {
             tempNum++;
             if (pos == tempNum) {
                 break;
-            }else{
+            } else {
                 temp = temp.getNext();
             }
         }

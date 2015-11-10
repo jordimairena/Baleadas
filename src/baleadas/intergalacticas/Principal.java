@@ -61,6 +61,8 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel17 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
         agregar_platos = new javax.swing.JDialog();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -364,6 +366,19 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel17.setText("jLabel17");
 
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane10.setViewportView(jTable3);
+
         javax.swing.GroupLayout cocinerosLayout = new javax.swing.GroupLayout(cocineros.getContentPane());
         cocineros.getContentPane().setLayout(cocinerosLayout);
         cocinerosLayout.setHorizontalGroup(
@@ -393,6 +408,10 @@ public class Principal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)))
                 .addComponent(jLabel6)
                 .addContainerGap())
+            .addGroup(cocinerosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         cocinerosLayout.setVerticalGroup(
             cocinerosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -418,7 +437,9 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(cocinerosLayout.createSequentialGroup()
                                 .addGap(63, 63, 63)
                                 .addComponent(jLabel17)))))
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/baleadas/intergalacticas/photo-17805.jpg"))); // NOI18N
@@ -759,7 +780,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel52.setText("Tiempo de Preparacion:");
 
-        jButton16.setText("Guardar");
+        jButton16.setText("Ordenar");
         jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton16MouseClicked(evt);
@@ -1425,6 +1446,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1435,6 +1457,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTable jt_lista_platos;
     private javax.swing.JTable jt_modif_lista_platos;
