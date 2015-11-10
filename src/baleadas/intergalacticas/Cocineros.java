@@ -10,6 +10,20 @@ package baleadas.intergalacticas;
  * @author jordi
  */
 public class Cocineros {
-    protected String nombre;
+    String nombre;
+
     //hilo de preparacion
+    public Cocineros(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
 }

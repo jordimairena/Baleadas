@@ -45,4 +45,12 @@ public class PilaCocinero {
             return actual;
         }  
     }
+    
+    public void imprimir(){
+        NodoCocinero temp = head;
+        while(temp.siguiente != null){
+            System.out.println(temp.getCocinero().getNombre());
+            temp = temp.siguiente;
+        }
+    }
 }

@@ -45,4 +45,12 @@ public class PilaIngredientes {
             return actual;
         }  
     }
+    
+        public void imprimir(){
+        NodoIngrediente temp = head;
+        while(temp.siguiente != null){
+            System.out.println(temp.getIngrediente().getNombre());
+            temp = temp.siguiente;
+        }
+    }
 }
